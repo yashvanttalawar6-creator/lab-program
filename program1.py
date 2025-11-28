@@ -2,13 +2,13 @@ import sys
 
 if len(sys.argv) == 4:
     script_name = sys.argv[0]
-    principal = float(sys.argv[1])
-    rate = float(sys.argv[2])
-    time = float(sys.argv[3])
+    principal = sys.argv[1]
+    rate = sys.argv[2]
+    time = sys.argv[3]
 else:
-    principal = float(input("Enter the principal amount: "))
-    rate = float(input("Enter the rate of interest: "))
-    time = float(input("Enter the time period: "))
+    principal = 1000.0
+    rate = 5.0
+    time = 10
 
 simple_interest = (principal * rate * time) / 100
 
